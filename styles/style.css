@@ -12,6 +12,8 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
+
+/* Shared styles starts here */
 .hero-section,
 .woman-section,
 .man-section,
@@ -20,6 +22,25 @@ body{
     margin:  0 auto;
     padding: 0 25px;
 }
+.section-title{
+    color: rgb(54, 57, 88);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.title{
+    color: rgb(54, 57, 88);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.description{
+    margin-bottom: 25px;
+    color: rgb(62, 62, 62);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+/* Shared styles starts here */
 
 /* Header section starts here */
 header{
@@ -33,7 +54,6 @@ header{
 }
 .nav-brands{
     width: 25%;
-    
 }
 .logo{
     width: 100%;
@@ -70,13 +90,6 @@ header{
 .hero-span{
     color: #363958;
 }
-.hero-description{
-    margin-bottom: 25px;
-    color: rgb(62, 62, 62);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 25px;
-}
 .btn{
     display: flex;
     align-items: center;
@@ -98,11 +111,6 @@ header{
 /* Woman setion starts here */
 .woman-section{
     margin-top: 100px;
-}
-.woman-title{
-    color: rgb(54, 57, 88);
-    font-size: 2.5rem;
-    text-transform: uppercase;
 }
 .container{
     display: grid;
@@ -127,18 +135,6 @@ header{
     width: 100%;
     height: 100%;
 }
-.card-title{
-    color: rgb(54, 57, 88);
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.card-description{
-    color: rgb(62, 62, 62);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 25px;
-}
 .card-footer{
     margin-top: 50px;
     display: flex;
@@ -155,11 +151,6 @@ header{
 /* Man section starts here */
 .man-section{
     margin-top: 100px;
-}
-.man-title{
-    color: rgb(54, 57, 88);
-    font-size: 2.5rem;
-    text-transform: uppercase;
 }
 /* Man section ends here */
 
@@ -194,18 +185,6 @@ header{
 .more-content-text{
     padding-left: 25px;
 }
-.more-content-title{
-    color: rgb(54, 57, 88);
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.more-content-description{
-    color: rgb(62, 62, 62);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 25px;
-}
 /* More section ends here */
 
 /* Footer starts here */
@@ -219,6 +198,9 @@ footer{
     padding: 0 20px;
 }
 /* Footer ends here */
+
+
+
 /*========================= Responsive design starts here (For mobile) =======================*/
 @media screen and (max-width:576px) {
     .nav-item{
@@ -228,8 +210,7 @@ footer{
         display: inline;
     }
     .nav-brands{
-        width: 70%;
-        
+        width: 70%;  
     }
     .logo{
         width: 100%;
@@ -273,8 +254,11 @@ footer{
         padding-left: 0;
     }
 }
+/*========================= Responsive design ends here (For mobile) =======================*/
 
-/* Responsive design starts here (For tablet) */
+
+
+/*======================== Responsive design starts here (For tablet) ========================*/
 @media screen and (min-width:576px) and (max-width:992px) {
     .hero-section,
     .more-container{
@@ -293,3 +277,4 @@ footer{
         height: 400px;
     }
 }
+/*======================== Responsive design ends here (For tablet) ========================*/
