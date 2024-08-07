@@ -208,6 +208,17 @@ header{
 }
 /* More section ends here */
 
+/* Footer starts here */
+footer{
+    margin-top: 50px;
+    color: rgb(62, 62, 62);
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 20px;
+}
+/* Footer ends here */
 /*========================= Responsive design starts here (For mobile) =======================*/
 @media screen and (max-width:576px) {
     .nav-item{
