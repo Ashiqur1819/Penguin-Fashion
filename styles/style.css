@@ -14,7 +14,8 @@ body{
 }
 .hero-section,
 .woman-section,
-.man-section{
+.man-section,
+.more-section{
     max-width: 1440px;
     margin:  0 auto;
     padding: 0 25px;
@@ -71,6 +72,10 @@ header{
 }
 .hero-description{
     margin-bottom: 25px;
+    color: rgb(62, 62, 62);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
 }
 .btn{
     display: flex;
@@ -132,6 +137,7 @@ header{
     color: rgb(62, 62, 62);
     font-size: 1rem;
     font-weight: 400;
+    line-height: 25px;
 }
 .card-footer{
     margin-top: 50px;
@@ -157,6 +163,51 @@ header{
 }
 /* Man section ends here */
 
+/* More section starts here */
+.more-section{
+    margin-top: 100px;
+}
+.more-container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.more-image{
+    width: 100%;
+}
+.more-img{
+    width: 100%;
+}
+.more-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+.more-content-img{
+    width: 15%;
+}
+.more-content-text{
+    padding-left: 25px;
+}
+.more-content-title{
+    color: rgb(54, 57, 88);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.more-content-description{
+    color: rgb(62, 62, 62);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+/* More section ends here */
+
 /*========================= Responsive design starts here (For mobile) =======================*/
 @media screen and (max-width:576px) {
     .nav-item{
@@ -172,7 +223,8 @@ header{
     .logo{
         width: 100%;
     }
-    .hero-section{
+    .hero-section, 
+    .more-container{
         flex-direction: column;
     }
     .hero-content{
@@ -195,15 +247,26 @@ header{
     .woman-title{
         font-size: 2rem;
     }
-    .card-footer{
+    .card-footer,
+    .more-content{
         flex-direction: column;
         gap: 20px;
+    }
+    .more-content{
+        text-align: center;
+    }
+    .more-content-img{
+        width: 33%;
+    }
+    .more-content-text{
+        padding-left: 0;
     }
 }
 
 /* Responsive design starts here (For tablet) */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .hero-section{
+    .hero-section,
+    .more-container{
         flex-direction: column;
     }
     .hero-content{
