@@ -236,7 +236,7 @@ footer{
    .container{
         grid-template-columns: 1fr;
     }
-    .woman-title{
+    .section-title{
         font-size: 2rem;
     }
     .card-footer,
